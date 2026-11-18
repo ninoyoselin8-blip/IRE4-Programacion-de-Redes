@@ -6,6 +6,7 @@ from requests.auth import HTTPBasicAuth
 requests.packages.urllib3.disable_warnings()
 
 # 1. Parámetros de la API RESTCONF
+
 url = "https://192.168.1.1/restconf/data/ietf-interfaces:interfaces"
 headers = {
     "Accept": "application/yang-data+json",
@@ -15,6 +16,7 @@ auth = HTTPBasicAuth("admin", "C1scoPassword12345!")
 
 try:
     # 2. Petición GET HTTP
+    print(f"consultando la APi")
     response = requests.get(
         url,
         headers=headers,

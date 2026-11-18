@@ -1,7 +1,7 @@
 from netmiko import ConnectHandler
 from netmiko.exceptions import NetmikoTimeoutException, NetmikoAuthenticationException
 
-# 1. Definición de parámetros de conexión
+# 1. Definició}n de parámetros de conexión
 device = {
     'device_type': 'cisco_ios',
     'host': '192.168.1.1',
